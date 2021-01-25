@@ -194,7 +194,7 @@
   .feynman{
     height: 790px;
     position: relative;
-    background: url(/images/feynman.png) no-repeat bottom 0px left 0px/867px 637px;
+    background: url(../images/feynman.png) no-repeat bottom 0px left 0px/867px 637px;
     background-color: #f2f2f2;
   /*  background-position: bottom 0px left 0px; */
     /* background-size: height 867px width 637px; */
