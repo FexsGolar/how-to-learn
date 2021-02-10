@@ -32,7 +32,7 @@
 
 .logo {
     width: 183px;
-    height: 183px;
+    height: 32px;
 }
 
 .logo_place_header {
@@ -40,6 +40,8 @@
     top: 30px;
     left: 64px;
     z-index: 2;
+    background: url(../images/logo_place_header.svg);
+    display: block;
     /* padding: 30px 0 0 64px; */
 }
 
@@ -56,6 +58,11 @@
 .header__link {
     text-decoration: none;
     color: #2f80ed;
+}
+
+.header__link:hover {
+    opacity: 0.3;
+    transition: none;
 }
 
 .header__subtitle {
@@ -86,11 +93,16 @@
     position: absolute;
     right: 0;
     margin-top: 64px;
-}
-
-.animation {
     animation: rotation 20s linear infinite;
 }
+
+
+/* Анимация */
+
+
+/* .rotation {
+    animation: rotation 20s linear infinite;
+} */
 
 .description {
     display: flex;
@@ -99,7 +111,6 @@
 }
 
 .two-columns {
-    /* margin: 100px 0 100px 0; */
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -146,7 +157,7 @@
 .techniques {
     margin: 0 auto;
     width: 80%;
-    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .cards {
@@ -156,6 +167,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    list-style: none;
 }
 
 .cards__item {
@@ -196,6 +208,10 @@
 
 /* Блок Video */
 
+.video {
+    padding-top: 100px;
+}
+
 .video__iframes {
     padding-top: 50px;
     display: flex;
@@ -219,11 +235,90 @@
 
 .oakley {
     background-color: #f2f2f2;
-    padding: 160px 0 80px;
+    padding-top: 160px;
+    display: flex;
+    justify-content: center;
 }
 
 
 /* Конец блока oakley */
+
+
+/* Блок khan */
+
+.khan {
+    background-color: #f2f2f2;
+    padding-top: 105px;
+}
+
+.khan__container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.khan__author {
+    margin: 0;
+    line-height: 42px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.khan__title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.khan__quote {
+    width: 790px;
+    margin: 50px 0 36px;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.khan__quote-author {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.khan__quote-author-subline {
+    margin: 10px 0 68px;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.khan__book-pic {
+    background: url(../images/khan-book.jpg);
+    height: 620px;
+    width: 608px;
+}
+
+.khan__book-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.khan__buy-link {
+    margin-left: 48px;
+    line-height: 42px;
+    font-size: 36px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #2f80ed;
+}
+
+.khan__buy-link:hover {
+    opacity: 0.3;
+    transition: none;
+}
+
+
+/* Конец блока khan */
 
 .section-title {
     line-height: 1.15;
@@ -235,7 +330,7 @@
 }
 
 .digits {
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .section-subtitle {
@@ -277,7 +372,7 @@
 }
 
 .feynman {
-    padding-top: 100px;
+    padding-top: 80px;
     min-height: 790px;
     position: relative;
     background: url(../images/feynman.png) no-repeat bottom 0px left 0px/867px 637px;
@@ -314,6 +409,11 @@
     font-weight: normal;
     text-decoration: none;
     color: #2f80ed;
+}
+
+.feynman__link:hover {
+    opacity: 0.3;
+    transition: none;
 }
 
 .kaufman {
@@ -365,7 +465,36 @@
     top: 0;
     right: -210px;
     z-index: -1;
+    animation: rotation 20s linear infinite;
 }
+
+
+/* Блок resources */
+
+.resources {
+    padding: 100px 0 217px;
+}
+
+.resources__logo-zone {
+    width: 1100px;
+    margin: 80px 217px;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.resources__logo {
+    width: 270px;
+    height: 38px;
+}
+
+.resources__logo:hover {
+    opacity: 0.3;
+    transition: none;
+}
+
+
+/* Конец блока resources */
 
 .footer {
     padding: 60px 0 40px;
@@ -373,6 +502,7 @@
     background-color: #1f1f1f;
     color: white;
     box-sizing: border-box;
+    display: flex;
 }
 
 .footer__columns {
@@ -385,11 +515,15 @@
 .footer__column_content_copyright {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex-basis: 711px;
 }
 
 .logo_place_footer {
+    width: 183px;
+    height: 35px;
     background: url(../images/logo_place_footer.svg) no-repeat;
+    display: block;
 }
 
 .footer__author {
@@ -416,14 +550,15 @@
     font-weight: normal;
     text-decoration: none;
     color: white;
-}
-
-.footer__column-link {
     list-style-type: none;
 }
 
+.footer__column-link:hover {
+    opacity: 0.3;
+    transition: none;
+}
+
 .footer__social-icon {
-    /* size: 16px 16px; */
     width: 16px;
     height: 16px;
     margin-right: 16px;
