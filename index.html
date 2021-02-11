@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="pages/index.css">
     <title>Научиться учиться</title>
 </head>
 
@@ -15,9 +15,9 @@
             <h1 class="header__title">
                 Научиться учиться
             </h1>
-            <h2 class="header__subtitle">
+            <p class="header__subtitle">
                 Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a class="header__link" href="#" target="_blank">Узнать &rarr;</a>
-            </h2>
+            </p>
             <img class="header__main-illustration" src="./images/header-image.png" alt="Мальчик">
             <div class="header__square-pic rotation"></div>
         </header>
@@ -70,14 +70,10 @@
             <section class="video">
                 <h2 class="section-title">Видео на TED</h2>
                 <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-                <div class="video__iframes">
-                    <div class="video__iframe">
-                        <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="video__iframe">
-                        <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
+                <ul class="video__iframes">
+                    <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </ul>
             </section>
 
             <section class="oakley">
@@ -101,7 +97,7 @@
             <section class="digits">
                 <h2 class="section-title">Цифры и факты</h2>
                 <p class="section-subtitle">Про учёбу и мозг</p>
-                <ul class="table">
+                <ol class="table">
                     <li class="table__cell">
                         <h3 class="table__heading">86 миллиардов</h3>
                         <p class="table__text">Число нейронов в мозге человека</p>
@@ -137,15 +133,15 @@
                         <h3 class="table__heading">1889 год</h3>
                         <p class="table__text">Открытие условного рефлекса</p>
                     </li>
-                </ul>
+                </ol>
             </section>
 
             <section class="khan">
                 <div class="khan__container">
                     <p class="khan__author">Салман Хан</p>
                     <h2 class="khan__title">Весь мир - школа</h2>
-                    <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят
-                        успех в школе, карьере и жизни.</p>
+                    <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят
+                        успех в школе, карьере и жизни.</blockquote>
                     <p class="khan__quote-author">Джордж Лукас</p>
                     <p class="khan__quote-author-subline">Кинорежиссер, продюссер</p>
                     <div class="khan__book-container">
