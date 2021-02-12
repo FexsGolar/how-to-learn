@@ -1,3 +1,7 @@
+.footer__column-link {
+    transition: .5s;
+}
+
 .footer__column-link:hover {
     opacity: 0.3;
     transition: .5s;
